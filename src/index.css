@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .hero-section {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .features-section, .contact-section {
+      padding: 10px;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .carousel .card {
+      width: 90%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .hero-section {
+      padding: 40px;
+    }
+  
+    .hero-section h1 {
+      font-size: 3rem;
+    }
+  
+    .hero-section p {
+      font-size: 1.25rem;
+    }
+  
+    .features-section, .contact-section {
+      padding: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  
+    .carousel .card {
+      width: 80%;
+    }
+  }
+  
